@@ -52,3 +52,5 @@ def main():
             print("Ничья")
             break
 
+
+
