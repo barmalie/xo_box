@@ -10,12 +10,12 @@
 
 def move_step(symbol):
     while True:
-        value = input('куда поставить?: '+symbol)
+        value = input('куда поставить?: '+symbol+" ?")
         if not (value in '123456789'):
             print('ошибочный ввод, повторите')
             continue
         value = int(value)
-        if str(board[value -1] in 'xo'):
+        if str(board[value -1]) in 'xo':
             print('эта клетка уже занята')
             continue
         board[value - 1] = symbol
